@@ -22,7 +22,7 @@ const Authpage = () => {
 
   return (
     <Container maxW={"container.sm"} padding={4}>
-      <Box border={"1px solid gray"} borderRadius={4}  padding={5} my={4}>
+      <Box className="glass-effect"  padding={5} my={4}>
         <VStack spacing={4}>
           <h1>Project Pantry</h1>
           <Input
@@ -57,7 +57,7 @@ const Authpage = () => {
           </Button>
         </VStack>
       </Box>
-      <Box border={"1px solid gray"} borderRadius={4} padding={5}>
+      <Box className="glass-effect" padding={5}>
         <Flex alignItems={"center"} justifyContent={"center"}>
           <Box mx={2} fontSize={14}>
             {isLoggedIn ? "Don't have an account?" : "Already have an account?"}
