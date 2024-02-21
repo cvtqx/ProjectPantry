@@ -1,8 +1,9 @@
 import { Box, Flex, Link, Tooltip } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
-import { FaHome } from "react-icons/fa";
 import { BiLogOut } from 'react-icons/bi';
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaHome, FaListUl } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa6";
+
 
 const SideBar = () => {
     // add more icons as needed
@@ -15,7 +16,15 @@ const SideBar = () => {
         {
             icon: <FaSearch />,
             text: "Search",
-        },
+           },
+           {
+            icon: <FaHeart />,
+            text: "Favourite recipes"
+           },
+           {
+               icon: <FaListUl />,
+               text: "Shopping list"
+           }
         
     ]
     return (
