@@ -1,7 +1,7 @@
 import { Box, Container, Flex, VStack } from '@chakra-ui/react';
 import { useState } from 'react';
-import Login from '../../components/SideBar/AuthForm/Login';
-import Signup from '../../components/SideBar/AuthForm/Signup';
+import Login from '../../components/AuthForm/Login';
+import Signup from '../../components/AuthForm/Signup';
 
 const Authpage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
@@ -11,7 +11,7 @@ const Authpage = () => {
       <Box className='glass-effect' padding={5} my={4}>
         <VStack spacing={4}>
           <h1>Project Pantry</h1>
-          {isLoggedIn ? <Login /> : <Signup /> }
+          {isLoggedIn ? <Login /> : <Signup />}
         </VStack>
       </Box>
       <Box className='glass-effect' padding={5}>

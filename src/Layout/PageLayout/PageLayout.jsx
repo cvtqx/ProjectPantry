@@ -1,5 +1,4 @@
 import { Box, Flex } from '@chakra-ui/react';
-import React from 'react';
 import SideBar from '../../components/SideBar/SideBar';
 import { useLocation } from 'react-router-dom';
 
